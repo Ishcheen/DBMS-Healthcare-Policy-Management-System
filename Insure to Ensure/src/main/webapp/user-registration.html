@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>User Registration - DBMS - Group 11</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<nav>
+		<div class="nav-center">
+			<a href="index.html"><h4>insure to ensure - DBMS project</h4></a>
+			<ul class="nav-links">
+				<li>
+					<a href="#">About</a>
+				</li>
+				<li>
+					<a href="#">Policy T&C</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+	<main>
+	<form novalidate class="user-registration-container" id="form" autocomplete="off" action="Register.jsp" method="post">
+			<h1>CREATE ACCOUNT</h1>
+			<div class="divider"></div>
+		<!-- form body -->
+		<div class="form-body">
+			<!-- FirstName LastName -->
+			<div class="horizontal-group">
+				<div class="left-group">
+					<label for="firstname" class="label-title">First name *</label>
+					<input type="text" id="firstname" name="firstname" class="reg-input-field" placeholder="Enter your first name">
+					<span class="error" aria-live="polite"></span>
+				</div>
+				<div class="right-group">
+					<label for="lastname" class="label-title">Last name *</label>
+					<input type="text" id="lastname" name="lastname" class="reg-input-field" placeholder="Enter your last name" >
+					<span class="error" aria-live="polite"></span>
+				</div>
+			</div>
+			<!-- Address -->
+			<div class="form-group">
+				<label for="address" class="label-title">Address</label>
+				<input type="text" id="location" name="address" class="reg-input-field" placeholder="Address">
+			</div>
+			
+			<!-- age, gender, dob and email-->
+			<div class="horizontal-group">
+				<div class="left-group" style="margin-bottom: 19px;">
+					<div class="form-group" style="margin-bottom:0px;">
+						<label for="dob" class="label-title">Date Of Birth</label>
+						<input type="date" id="dob" name="dob" class="reg-input-field">
+					</div>
+				</div>
+				<div class="right-group">
+					<label for="gender" class="label-title">Gender</label><br>
+					<div class="form-group">
+						<div style="padding-top: 1rem;">
+						<input type="radio" id="male" name="gender" value="male" class="radio-btn">
+						<label for="male">Male</label>
+						<input type="radio" id="female" name="gender" value="female" class="radio-btn">
+						<label for="female">Female</label>
+						<input type="radio" id="other" name="gender" value="other" class="radio-btn">
+						<label for="other">Other</label>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="horizontal-group">
+				<div class="left-group">
+					<div class="form-group" style="margin-bottom: 0;">
+						<label for="age" class="label-title">Age</label><br/>
+						<input class="reg-input-field" id="age" name="age" type="number" placeholder="Age">
+					</div>
+				</div>
+				<div class="right-group">
+					<div class="form-group">
+					    <label for="phone" class="label-title">Mobile No.*</label>
+						<input type="tel" pattern="[789][0-9]{9}" id="phone" name="phone" class="reg-input-field" placeholder="Phone Number" >
+						<span class="error" aria-live="polite"></span>
+					</div>
+				</div>
+			</div>
+			
+			
+			<!-- Email -->
+			<div class="form-group">
+				<label for="email" class="label-title">Email *</label>
+				<input style="margin-top: 0px;" type="email" id="email" class="reg-input-field" name="email" placeholder="Enter your email Id">
+				<span class="error" aria-live="polite"></span>
+			</div>
+			
+			<!-- PanCard and Aadhar card -->
+			<div class="horizontal-group">
+				<div class="left-group">
+					<label for="pan_no" class="label-title">Pan Number</label>
+					<input type="text" id="pan_no" class="reg-input-field" name="pan_no" placeholder="Enter your Pan Number" >
+					<span class="error" aria-live="polite"></span>
+				</div>
+				<div class="right-group">
+					<label for="aadhar" class="label-title">Aadhar Number</label>
+					<input type="text" id="aadhar" class="reg-input-field" name="aadhar_no" placeholder="Enter your Aadhar Number" >
+					<span class="error" aria-live="polite"></span>
+				</div>		
+				
+			</div>
+		
+		<!-- Password -->
+			<div class="horizontal-group">
+				<div class="left-group">
+					<label for="password" class="label-title">Password *</label>
+					<input type="password" id="password" class="reg-input-field" name="password" placeholder="Enter your password" >
+					<span class="error" aria-live="polite"></span>
+				</div>
+				<div class="right-group">
+					<label for="confirm-password" class="label-title">Confirm Password *</label>
+					<input type="password" id="confirm-password" class="reg-input-field" name="confirm-password" placeholder="Enter your password again" >
+					<span class="error" aria-live="polite"></span>
+				</div>		
+				
+			</div>
+		</div>
+		
+		<!-- form footer -->
+		<div class="form-footer">
+  			<!-- <button type="submit" id="submitBtn" class="btn-hero1">Register</button> -->
+			<a href="Registration-next.html"><button type="submit" id="submitBtn" class="btn-hero-next">Next <i class="fas fa-arrow-right" style="font-size: 1.1rem;"></i></button></a>
+		</div>
+	</form> 
+	</main>
+	<script src="index.js"></script>
+</body>
+</html>
